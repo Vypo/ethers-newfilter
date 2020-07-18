@@ -1,0 +1,18 @@
+[package]
+name = "ethers-subscribe"
+version = "0.1.0"
+authors = ["Vypo Mouse <vypo@fursuits.by>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.ethers]
+git = "https://github.com/gakonst/ethers-rs"
+
+[dependencies.ethers-providers]
+git = "https://github.com/gakonst/ethers-rs"
+features = ["tokio-tls"]
+
+[dependencies.tokio]
+version = "0.2.21"
+features = ["rt-threaded", "macros"]
